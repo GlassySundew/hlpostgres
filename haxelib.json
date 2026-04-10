@@ -1,0 +1,11 @@
+{
+	"name" : "hlpostgres",
+	"url" : "https://github.com/GlassySundew/hlpostgres",
+	"license" : "BSD",
+	"contributors" : ["GlassySundew"],
+	"description" : "hl/c bindings for libpq",
+	"version" : "0.1.0",
+	"releasenote" : "",
+	"dependencies": {}
+}
+
