@@ -19,6 +19,7 @@ class Client {
 
 		var result = new Result( r );
 		if ( !result.isSuccess() ) {
+
 			var message = result.error();
 			result.clear();
 			throw message != null ? message : "Postgres query failed";
@@ -31,10 +32,12 @@ class Client {
 
 		var result = query( sql );
 		try {
+
 			var affected = result.affectedRows();
 			result.clear();
 			return affected;
-		} catch ( e ) {
+		} catch( e ) {
+
 			result.clear();
 			throw e;
 		}
